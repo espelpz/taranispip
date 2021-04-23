@@ -33,8 +33,7 @@ for k in list(results):
         del results[k]
 
 # Dump to YAML
-print(
-    """
+print("""
 id: 'software_versions'
 section_name: 'nf-core/taranispip Software Versions'
 section_href: 'https://github.com/nf-core/taranispip'
@@ -42,8 +41,7 @@ plot_type: 'html'
 description: 'are collected at run time from the software output.'
 data: |
     <dl class="dl-horizontal">
-"""
-)
+""")
 for k, v in results.items():
     print("        <dt>{}</dt><dd><samp>{}</samp></dd>".format(k, v))
 print("    </dl>")
