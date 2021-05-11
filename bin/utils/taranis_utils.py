@@ -247,7 +247,7 @@ def get_fasta_file_list (check_directory,  logger):
     if not os.path.isdir(check_directory):
         logger.info('directory %s does not exists', check_directory)
         return False
-
+        
     fasta_format = ['*.fasta', '*.fa', '*.fna', '*.ffn', '*.frn']
     list_filtered_files = []
     for extension in fasta_format:
